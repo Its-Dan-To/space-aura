@@ -9,7 +9,7 @@ extends Node
 ## en z_index -1). Normalmente no hace falta: BaseLunar ya ordena sus cosas.
 @export var ordenar_profundidad := false
 ## Escena a la que se pasa al terminar las 3 estaciones (vacío = solo mostrar el mensaje).
-@export_file("*.tscn") var escena_al_terminar := ""
+@export_file("*.tscn") var escena_al_terminar := "res://scenes/AterrizajeTierra/AterrizajeTierra.tscn"
 ## Si en el mapa no hay astronauta, lo crea junto a la nave.
 @export var crear_jugadores_si_faltan := true
 ## Si en el mapa no hay cámara, crea una que sigue al astronauta.

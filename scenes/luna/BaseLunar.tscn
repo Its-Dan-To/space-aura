@@ -1,24 +1,24 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://cl6r0fr0qlmr7"]
 
-[ext_resource type="Script" path="res://scripts/luna/estacion_minijuego.gd" id="1_r"]
-[ext_resource type="Script" path="res://scripts/luna/nave_lunar.gd" id="2_r"]
-[ext_resource type="Script" path="res://scripts/luna/luna_hub.gd" id="3_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/plataforma.png" id="4_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/sombra_modulo.png" id="5_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/modulo_apollo11.png" id="6_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/estacion_planetvac.png" id="7_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/estacion_mantenimiento.png" id="8_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/estacion_rover.png" id="9_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/roca_basalto.png" id="10_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/roca_anortosita.png" id="11_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/roca_brecha.png" id="12_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/roca_mediana.png" id="13_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/rover.png" id="14_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/panel_solar.png" id="15_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/antena.png" id="16_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/bandera.png" id="17_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/baliza.png" id="18_r"]
-[ext_resource type="Texture2D" path="res://assets/luna/huellas.png" id="19_r"]
+[ext_resource type="Script" uid="uid://8hg1vr7tgx0i" path="res://scripts/luna/estacion_minijuego.gd" id="1_r"]
+[ext_resource type="Script" uid="uid://1ya8ulqngjk4" path="res://scripts/luna/nave_lunar.gd" id="2_r"]
+[ext_resource type="Script" uid="uid://bnfqrc6hechla" path="res://scripts/luna/luna_hub.gd" id="3_r"]
+[ext_resource type="Texture2D" uid="uid://dial46558u68j" path="res://assets/luna/plataforma.png" id="4_r"]
+[ext_resource type="Texture2D" uid="uid://dr3iphqyxymq1" path="res://assets/luna/sombra_modulo.png" id="5_r"]
+[ext_resource type="Texture2D" uid="uid://bok7851ggsi4s" path="res://assets/luna/modulo_apollo11.png" id="6_r"]
+[ext_resource type="Texture2D" uid="uid://betnqk2qfbuaw" path="res://assets/luna/estacion_planetvac.png" id="7_r"]
+[ext_resource type="Texture2D" uid="uid://pdaku422wk37" path="res://assets/luna/estacion_mantenimiento.png" id="8_r"]
+[ext_resource type="Texture2D" uid="uid://c13dxa81v0osr" path="res://assets/luna/estacion_rover.png" id="9_r"]
+[ext_resource type="Texture2D" uid="uid://b11fy12wambdd" path="res://assets/luna/roca_basalto.png" id="10_r"]
+[ext_resource type="Texture2D" uid="uid://f7mkn0a2dd40" path="res://assets/luna/roca_anortosita.png" id="11_r"]
+[ext_resource type="Texture2D" uid="uid://dvdgwodvwcbsc" path="res://assets/luna/roca_brecha.png" id="12_r"]
+[ext_resource type="Texture2D" uid="uid://8ey3itnkx2tl" path="res://assets/luna/roca_mediana.png" id="13_r"]
+[ext_resource type="Texture2D" uid="uid://cc2g3hrpo4g8v" path="res://assets/luna/rover.png" id="14_r"]
+[ext_resource type="Texture2D" uid="uid://dlies2lbuxyja" path="res://assets/luna/panel_solar.png" id="15_r"]
+[ext_resource type="Texture2D" uid="uid://djq145lltg64j" path="res://assets/luna/antena.png" id="16_r"]
+[ext_resource type="Texture2D" uid="uid://bsayyeuimqmqn" path="res://assets/luna/bandera.png" id="17_r"]
+[ext_resource type="Texture2D" uid="uid://dn880jw8twmf2" path="res://assets/luna/baliza.png" id="18_r"]
+[ext_resource type="Texture2D" uid="uid://b0y7btu7qq8sf" path="res://assets/luna/huellas.png" id="19_r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
 size = Vector2(46, 14)
@@ -29,11 +29,11 @@ radius = 28.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3"]
 size = Vector2(16, 6)
 
-[node name="BaseLunar" type="Node2D"]
+[node name="BaseLunar" type="Node2D" unique_id=2109345306]
 z_index = 5
 y_sort_enabled = true
 
-[node name="CaminoPlanetVac" type="Line2D" parent="."]
+[node name="CaminoPlanetVac" type="Line2D" parent="." unique_id=284749589]
 z_index = -1
 points = PackedVector2Array(0, 14, -50, 30, -120, 20)
 width = 12.0
@@ -42,7 +42,7 @@ joint_mode = 2
 begin_cap_mode = 2
 end_cap_mode = 2
 
-[node name="CaminoRover" type="Line2D" parent="."]
+[node name="CaminoRover" type="Line2D" parent="." unique_id=653852691]
 z_index = -1
 points = PackedVector2Array(0, 14, 50, 30, 120, 20)
 width = 12.0
@@ -51,7 +51,7 @@ joint_mode = 2
 begin_cap_mode = 2
 end_cap_mode = 2
 
-[node name="CaminoMantenimiento" type="Line2D" parent="."]
+[node name="CaminoMantenimiento" type="Line2D" parent="." unique_id=1826616397]
 z_index = -1
 points = PackedVector2Array(0, 14, 0, 70)
 width = 12.0
@@ -60,29 +60,26 @@ joint_mode = 2
 begin_cap_mode = 2
 end_cap_mode = 2
 
-[node name="Plataforma" type="Sprite2D" parent="."]
-position = Vector2(0, 0)
-texture = ExtResource("4_r")
+[node name="Plataforma" type="Sprite2D" parent="." unique_id=27483729]
 z_index = -1
+texture = ExtResource("4_r")
 
-[node name="Nave" type="Node2D" parent="."]
+[node name="Nave" type="Node2D" parent="." unique_id=2040133269]
 position = Vector2(0, 6)
 script = ExtResource("2_r")
 
-[node name="Sombra" type="Sprite2D" parent="Nave"]
-position = Vector2(0, 0)
+[node name="Sombra" type="Sprite2D" parent="Nave" unique_id=656155806]
 texture = ExtResource("5_r")
 
-[node name="Modulo" type="Sprite2D" parent="Nave"]
-position = Vector2(0, 0)
+[node name="Modulo" type="Sprite2D" parent="Nave" unique_id=618117126]
 texture = ExtResource("6_r")
 offset = Vector2(0, -30)
 
-[node name="Nombre" type="Label" parent="Nave"]
-offset_left = -48
-offset_top = 4
-offset_right = 48
-offset_bottom = 16
+[node name="Nombre" type="Label" parent="Nave" unique_id=707639305]
+offset_left = -48.0
+offset_top = 4.0
+offset_right = 48.0
+offset_bottom = 16.0
 theme_override_colors/font_color = Color(1, 0.8, 0.46, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 3
@@ -90,38 +87,35 @@ theme_override_font_sizes/font_size = 8
 text = "APOLLO 11"
 horizontal_alignment = 1
 
-[node name="Solido" type="StaticBody2D" parent="Nave"]
+[node name="Solido" type="StaticBody2D" parent="Nave" unique_id=2122613485]
 position = Vector2(0, -6)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Nave/Solido"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nave/Solido" unique_id=1044367160]
 shape = SubResource("RectangleShape2D_1")
 
-[node name="EstacionPlanetVac" type="Area2D" parent="."]
+[node name="EstacionPlanetVac" type="Area2D" parent="." unique_id=441815823]
 position = Vector2(-120, 20)
 script = ExtResource("1_r")
-id_minijuego = "planetvac"
-titulo = "PlanetVac"
 escena = "res://scenes/luna/minijuego_planetvac.tscn"
 
-[node name="Letrero" type="Sprite2D" parent="EstacionPlanetVac"]
-position = Vector2(0, 0)
+[node name="Letrero" type="Sprite2D" parent="EstacionPlanetVac" unique_id=1701658317]
 texture = ExtResource("7_r")
 offset = Vector2(0, -18)
 
-[node name="Zona" type="CollisionShape2D" parent="EstacionPlanetVac"]
+[node name="Zona" type="CollisionShape2D" parent="EstacionPlanetVac" unique_id=1542108891]
 shape = SubResource("CircleShape2D_2")
 
-[node name="Poste" type="StaticBody2D" parent="EstacionPlanetVac"]
+[node name="Poste" type="StaticBody2D" parent="EstacionPlanetVac" unique_id=1590993136]
 position = Vector2(0, -2)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EstacionPlanetVac/Poste"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EstacionPlanetVac/Poste" unique_id=481118873]
 shape = SubResource("RectangleShape2D_3")
 
-[node name="Titulo" type="Label" parent="EstacionPlanetVac"]
-offset_left = -48
-offset_top = 4
-offset_right = 48
-offset_bottom = 16
+[node name="Titulo" type="Label" parent="EstacionPlanetVac" unique_id=498084819]
+offset_left = -48.0
+offset_top = 4.0
+offset_right = 48.0
+offset_bottom = 16.0
 theme_override_colors/font_color = Color(1, 0.8, 0.46, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 3
@@ -129,32 +123,31 @@ theme_override_font_sizes/font_size = 8
 text = "PLANETVAC"
 horizontal_alignment = 1
 
-[node name="EstacionMantenimiento" type="Area2D" parent="."]
+[node name="EstacionMantenimiento" type="Area2D" parent="." unique_id=1323525102]
 position = Vector2(0, 72)
 script = ExtResource("1_r")
 id_minijuego = "mantenimiento"
 titulo = "Mantenimiento"
 escena = "res://scenes/luna/minijuego_mantenimiento.tscn"
 
-[node name="Letrero" type="Sprite2D" parent="EstacionMantenimiento"]
-position = Vector2(0, 0)
+[node name="Letrero" type="Sprite2D" parent="EstacionMantenimiento" unique_id=440223800]
 texture = ExtResource("8_r")
 offset = Vector2(0, -18)
 
-[node name="Zona" type="CollisionShape2D" parent="EstacionMantenimiento"]
+[node name="Zona" type="CollisionShape2D" parent="EstacionMantenimiento" unique_id=1090889858]
 shape = SubResource("CircleShape2D_2")
 
-[node name="Poste" type="StaticBody2D" parent="EstacionMantenimiento"]
+[node name="Poste" type="StaticBody2D" parent="EstacionMantenimiento" unique_id=2025564956]
 position = Vector2(0, -2)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EstacionMantenimiento/Poste"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EstacionMantenimiento/Poste" unique_id=1626807497]
 shape = SubResource("RectangleShape2D_3")
 
-[node name="Titulo" type="Label" parent="EstacionMantenimiento"]
-offset_left = -48
-offset_top = 4
-offset_right = 48
-offset_bottom = 16
+[node name="Titulo" type="Label" parent="EstacionMantenimiento" unique_id=1405277936]
+offset_left = -48.0
+offset_top = 4.0
+offset_right = 48.0
+offset_bottom = 16.0
 theme_override_colors/font_color = Color(1, 0.8, 0.46, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 3
@@ -162,32 +155,31 @@ theme_override_font_sizes/font_size = 8
 text = "MANTENIMIENTO"
 horizontal_alignment = 1
 
-[node name="EstacionRover" type="Area2D" parent="."]
+[node name="EstacionRover" type="Area2D" parent="." unique_id=811576435]
 position = Vector2(120, 20)
 script = ExtResource("1_r")
 id_minijuego = "rover"
 titulo = "Rover lunar"
 escena = "res://scenes/luna/minijuego_rover.tscn"
 
-[node name="Letrero" type="Sprite2D" parent="EstacionRover"]
-position = Vector2(0, 0)
+[node name="Letrero" type="Sprite2D" parent="EstacionRover" unique_id=1496436967]
 texture = ExtResource("9_r")
 offset = Vector2(0, -18)
 
-[node name="Zona" type="CollisionShape2D" parent="EstacionRover"]
+[node name="Zona" type="CollisionShape2D" parent="EstacionRover" unique_id=1677018572]
 shape = SubResource("CircleShape2D_2")
 
-[node name="Poste" type="StaticBody2D" parent="EstacionRover"]
+[node name="Poste" type="StaticBody2D" parent="EstacionRover" unique_id=1574359944]
 position = Vector2(0, -2)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EstacionRover/Poste"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EstacionRover/Poste" unique_id=1736295696]
 shape = SubResource("RectangleShape2D_3")
 
-[node name="Titulo" type="Label" parent="EstacionRover"]
-offset_left = -48
-offset_top = 4
-offset_right = 48
-offset_bottom = 16
+[node name="Titulo" type="Label" parent="EstacionRover" unique_id=839154150]
+offset_left = -48.0
+offset_top = 4.0
+offset_right = 48.0
+offset_bottom = 16.0
 theme_override_colors/font_color = Color(1, 0.8, 0.46, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 3
@@ -195,114 +187,112 @@ theme_override_font_sizes/font_size = 8
 text = "ROVER LUNAR"
 horizontal_alignment = 1
 
-[node name="Piedra1" type="Sprite2D" parent="."]
+[node name="Piedra1" type="Sprite2D" parent="." unique_id=668800950]
 position = Vector2(-146, 34)
 texture = ExtResource("10_r")
 offset = Vector2(0, -4)
 
-[node name="Piedra2" type="Sprite2D" parent="."]
+[node name="Piedra2" type="Sprite2D" parent="." unique_id=1640514013]
 position = Vector2(-138, 44)
 texture = ExtResource("11_r")
 offset = Vector2(0, -4)
 
-[node name="Piedra3" type="Sprite2D" parent="."]
+[node name="Piedra3" type="Sprite2D" parent="." unique_id=458026815]
 position = Vector2(-98, 38)
 texture = ExtResource("12_r")
 offset = Vector2(0, -4)
 
-[node name="Piedra4" type="Sprite2D" parent="."]
+[node name="Piedra4" type="Sprite2D" parent="." unique_id=1999478147]
 position = Vector2(-94, 8)
 texture = ExtResource("10_r")
 offset = Vector2(0, -4)
 
-[node name="Piedra5" type="Sprite2D" parent="."]
+[node name="Piedra5" type="Sprite2D" parent="." unique_id=453927998]
 position = Vector2(-152, 6)
 texture = ExtResource("13_r")
 offset = Vector2(0, -6)
 
-[node name="RoverEstacionado" type="Sprite2D" parent="."]
+[node name="RoverEstacionado" type="Sprite2D" parent="." unique_id=2140226817]
 position = Vector2(152, 32)
 texture = ExtResource("14_r")
 offset = Vector2(0, -11)
 
-[node name="PanelSolar1" type="Sprite2D" parent="."]
+[node name="PanelSolar1" type="Sprite2D" parent="." unique_id=672103584]
 position = Vector2(-70, -40)
 texture = ExtResource("15_r")
 offset = Vector2(0, -11)
 
-[node name="PanelSolar2" type="Sprite2D" parent="."]
+[node name="PanelSolar2" type="Sprite2D" parent="." unique_id=1254323338]
 position = Vector2(-40, -46)
 texture = ExtResource("15_r")
 offset = Vector2(0, -11)
 
-[node name="Antena" type="Sprite2D" parent="."]
+[node name="Antena" type="Sprite2D" parent="." unique_id=690319651]
 position = Vector2(70, -42)
 texture = ExtResource("16_r")
 offset = Vector2(0, -14)
 
-[node name="Bandera" type="Sprite2D" parent="."]
+[node name="Bandera" type="Sprite2D" parent="." unique_id=1143886275]
 position = Vector2(-44, 2)
 texture = ExtResource("17_r")
 offset = Vector2(0, -12)
 
-[node name="Baliza1" type="Sprite2D" parent="."]
+[node name="Baliza1" type="Sprite2D" parent="." unique_id=1285187680]
 position = Vector2(-38, 18)
 texture = ExtResource("18_r")
 offset = Vector2(0, -10)
 hframes = 2
-frame = 0
 
-[node name="Baliza2" type="Sprite2D" parent="."]
+[node name="Baliza2" type="Sprite2D" parent="." unique_id=1203406301]
 position = Vector2(38, 18)
 texture = ExtResource("18_r")
 offset = Vector2(0, -10)
 hframes = 2
 frame = 1
 
-[node name="Baliza3" type="Sprite2D" parent="."]
+[node name="Baliza3" type="Sprite2D" parent="." unique_id=1361363916]
 position = Vector2(-30, -12)
 texture = ExtResource("18_r")
 offset = Vector2(0, -10)
 hframes = 2
-frame = 0
 
-[node name="Baliza4" type="Sprite2D" parent="."]
+[node name="Baliza4" type="Sprite2D" parent="." unique_id=7794741]
 position = Vector2(30, -12)
 texture = ExtResource("18_r")
 offset = Vector2(0, -10)
 hframes = 2
 frame = 1
 
-[node name="Huellas1" type="Sprite2D" parent="."]
+[node name="Huellas1" type="Sprite2D" parent="." unique_id=1221922302]
+z_index = -1
 position = Vector2(-34, 26)
-texture = ExtResource("19_r")
-z_index = -1
 rotation = 0.5
+texture = ExtResource("19_r")
 
-[node name="Huellas2" type="Sprite2D" parent="."]
+[node name="Huellas2" type="Sprite2D" parent="." unique_id=1677635629]
+z_index = -1
 position = Vector2(-84, 30)
-texture = ExtResource("19_r")
-z_index = -1
 rotation = -0.2
+texture = ExtResource("19_r")
 
-[node name="Huellas3" type="Sprite2D" parent="."]
+[node name="Huellas3" type="Sprite2D" parent="." unique_id=530040579]
+z_index = -1
 position = Vector2(34, 26)
-texture = ExtResource("19_r")
-z_index = -1
 rotation = -0.5
+texture = ExtResource("19_r")
 
-[node name="Huellas4" type="Sprite2D" parent="."]
+[node name="Huellas4" type="Sprite2D" parent="." unique_id=63954540]
+z_index = -1
 position = Vector2(84, 30)
-texture = ExtResource("19_r")
-z_index = -1
 rotation = 0.2
-
-[node name="Huellas5" type="Sprite2D" parent="."]
-position = Vector2(6, 46)
 texture = ExtResource("19_r")
-z_index = -1
-rotation = 1.5
 
-[node name="Hub" type="Node" parent="."]
+[node name="Huellas5" type="Sprite2D" parent="." unique_id=949625887]
+z_index = -1
+position = Vector2(6, 46)
+rotation = 1.5
+texture = ExtResource("19_r")
+
+[node name="Hub" type="Node" parent="." unique_id=1607858315]
 script = ExtResource("3_r")
 crear_jugadores_si_faltan = false

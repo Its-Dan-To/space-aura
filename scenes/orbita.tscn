@@ -1,8 +1,8 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://bvd2ccbfdcxpr"]
 
-[ext_resource type="Script" uid="uid://b3ykwwin2syin" path="res://scripts/scripts/orbita.gd" id="1_orbita"]
+[ext_resource type="Script" uid="uid://bmwhwwajuuo05" path="res://scripts/scripts/orbita.gd" id="1_orbita"]
 
-[node name="Orbita" type="Control"]
+[node name="Orbita" type="Control" unique_id=1712800096]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

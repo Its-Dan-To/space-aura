@@ -31,6 +31,9 @@ const ALTURA_SONDAS := 1.7          # m: sondas bajo las patas -> se enciende "C
 const DANO_IMPACTO := 25.0          # se resta a la integridad en cada choque
 const VEL_MAX_BARRA := 10.0         # m/s, tope visual de la barra de velocidad
 
+const ESCENA_MAPA_LUNA := "res://scenes/luna/mapa_luna.tscn"
+const PAUSA_ANTES_DE_MAPA := 4.0
+
 const COLOR_OK := Color(0.4, 1.0, 0.4)
 const COLOR_ALERTA := Color(1.0, 0.85, 0.3)
 const COLOR_PELIGRO := Color(1.0, 0.35, 0.3)
@@ -106,6 +109,7 @@ func _ready() -> void:
 	_cargar_fondo()
 	_cargar_modelo_nave()
 	_reiniciar_intento()
+	mision_completada.connect(_ir_al_mapa_luna)
 
 
 ## Si la escena es una versión anterior y le faltan las etiquetas nuevas, las crea por código.
@@ -415,7 +419,31 @@ func _victoria(texto: String) -> void:
 	if bitacora:
 		bitacora.desbloquear_entrada("lunar_craters")
 	mision_completada.emit()
+func _ir_al_mapa_luna() -> void:
+	if not ResourceLoader.exists(ESCENA_MAPA_LUNA):
+		push_error("[aterrizaje] No encuentro: " + ESCENA_MAPA_LUNA)
+		return
 
+	# Espera para que se lea el mensaje de victoria
+	await get_tree().create_timer(PAUSA_ANTES_DE_MAPA).timeout
+
+	# Fundido a negro
+	var capa := CanvasLayer.new()
+	capa.layer = 50
+	add_child(capa)
+	var negro := ColorRect.new()
+	negro.color = Color.BLACK
+	negro.size = get_viewport_rect().size
+	negro.modulate.a = 0.0
+	negro.mouse_filter = Control.MOUSE_FILTER_STOP
+	capa.add_child(negro)
+	var t := create_tween()
+	t.tween_property(negro, "modulate:a", 1.0, 1.0)
+	await t.finished
+
+	var error := get_tree().change_scene_to_file(ESCENA_MAPA_LUNA)
+	if error != OK:
+		push_error("No se pudo abrir %s (error %d)" % [ESCENA_MAPA_LUNA, error])
 
 func _fallo(texto: String) -> void:
 	_detener_nave()
