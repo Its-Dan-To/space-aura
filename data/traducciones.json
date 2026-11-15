@@ -1,5 +1,17 @@
 {
 	"en": {
+		"BASE LUNAR - ": "LUNAR BASE - ",
+		"Mantenimiento": "Maintenance",
+		"Rover lunar": "Lunar rover",
+		"MANTENIMIENTO": "MAINTENANCE",
+		"ROVER LUNAR": "LUNAR ROVER",
+		"PUNTOS: %d": "POINTS: %d",
+		"¡BASE LUNAR OPERATIVA!": "LUNAR BASE OPERATIONAL!",
+		"Completaste todas las tareas en la Luna.": "You completed all tasks on the Moon.",
+		"E: continuar la misión": "E: continue mission",
+		"Entrar": "Enter",
+		"Repetir": "Replay",
+		"Falta la escena del minijuego": "Minigame scene is missing",
 		"EL VIAJE DE ALBERTSAHUR": "ALBERTSAHUR'S JOURNEY",
 		"Jugar": "Play",
 		"Opciones": "Options",
