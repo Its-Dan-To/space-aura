@@ -1,0 +1,112 @@
+{
+	"entradas": [
+		{
+			"id": "apollo_11",
+			"titulo": {
+				"es": "Apolo 11",
+				"en": "Apollo 11"
+			},
+			"subtitulo_o_fecha": {
+				"es": "El Águila ha alunizado",
+				"en": "The Eagle has landed"
+			},
+			"texto": {
+				"es": "[i]Nota de bitácora: elegiste la misma nave que hizo historia.[/i]\n\nEl 16 de julio de 1969, un cohete [color=#f5c542]Saturno V[/color] rugió en la plataforma llevando a tres astronautas rumbo a la Luna. Mientras [color=#8fd3ff]Michael Collins[/color] daba vueltas arriba en el módulo de mando [b]Columbia[/b], [color=#8fd3ff]Neil Armstrong[/color] y [color=#8fd3ff]Buzz Aldrin[/color] bajaron el módulo lunar [b]Eagle[/b] hasta el [color=#f5c542]Mar de la Tranquilidad[/color]. Segundos antes de tocar suelo, Armstrong tomó los controles a mano para esquivar un cráter lleno de rocas; alunizó unos 6 km fuera del punto previsto y con muy poco combustible. Unos 650 millones de personas lo vieron pisar la superficie y decir: [i]«Es un pequeño paso para el hombre, un gran salto para la humanidad».[/i]\n\nLa tripulación recibió una llamada del entonces presidente Richard Nixon y dejó allí un disco de silicio con mensajes de buena voluntad de 73 países. Viajaron por una [color=#f5c542]trayectoria de regreso libre[/color], una especie de resortera cósmica que los habría traído de vuelta aunque fallara el motor: 1,533,800 km en 8 días, 3 horas y 18 minutos antes de amerizar sanos y salvos en el Pacífico.",
+				"en": "[i]Logbook note: you picked the same ship that made history.[/i]\n\nOn July 16, 1969, a [color=#f5c542]Saturn V[/color] rocket thundered off the pad carrying three astronauts toward the Moon. While [color=#8fd3ff]Michael Collins[/color] circled overhead in the command module [b]Columbia[/b], [color=#8fd3ff]Neil Armstrong[/color] and [color=#8fd3ff]Buzz Aldrin[/color] steered the lunar module [b]Eagle[/b] down to the [color=#f5c542]Sea of Tranquility[/color]. Seconds before touchdown, Armstrong took manual control to dodge a boulder-filled crater, landing about four miles off target with very little fuel to spare. Around 650 million people watched him step onto the surface and say: [i]“That's one small step for a man, one giant leap for mankind.”[/i]\n\nThe crew took a phone call from then-President Richard Nixon and left behind a silicon disk with goodwill messages from 73 countries. Riding a [color=#f5c542]free-return trajectory[/color], a cosmic slingshot that would have swung them home even if the engine failed, they traveled 953,054 miles in 8 days, 3 hours and 18 minutes before splashing down safely in the Pacific."
+			},
+			"ruta_imagen": "res://assets/bitacora/apollo_11.jpg",
+			"desbloqueada": false
+		},
+		{
+			"id": "artemis_2",
+			"titulo": {
+				"es": "Artemis II",
+				"en": "Artemis II"
+			},
+			"subtitulo_o_fecha": {
+				"es": "Pensando en ti, Tierra",
+				"en": "Thinking of you, Earth"
+			},
+			"texto": {
+				"es": "[i]Nota de bitácora: tu tripulación está volando el capítulo más nuevo de la historia lunar.[/i]\n\nEn abril de 2026, el cohete [color=#f5c542]SLS[/color] lanzó la nave [b]Orión[/b] en su primer vuelo con gente a bordo: una vuelta a la Luna de casi 10 días. Los astronautas de la NASA [color=#8fd3ff]Reid Wiseman[/color], [color=#8fd3ff]Victor Glover[/color] y [color=#8fd3ff]Christina Koch[/color], junto al astronauta de la Agencia Espacial Canadiense [color=#8fd3ff]Jeremy Hansen[/color], llegaron a [color=#f5c542]406,770 km[/color] de la Tierra, lo más lejos que han ido los seres humanos, y vieron partes de la superficie lunar que ningún ojo humano había visto antes.\n\nEl 4 de abril, con más de dos terceras partes del camino recorrido, el comandante Wiseman miró hacia atrás por una de las ventanas de Orión y le tomó una foto a su casa: una Tierra pequeñita y brillante flotando en la oscuridad. Artemis II es el ensayo general de las misiones que volverán a dejar astronautas en la superficie de la Luna.",
+				"en": "[i]Logbook note: your crew is flying the newest chapter of the Moon story.[/i]\n\nIn April 2026, the [color=#f5c542]SLS[/color] rocket launched the [b]Orion[/b] spacecraft on its first flight with people aboard: a nearly 10-day loop around the Moon. NASA astronauts [color=#8fd3ff]Reid Wiseman[/color], [color=#8fd3ff]Victor Glover[/color] and [color=#8fd3ff]Christina Koch[/color], together with Canadian Space Agency astronaut [color=#8fd3ff]Jeremy Hansen[/color], traveled [color=#f5c542]252,756 miles[/color] from Earth, the farthest humans have ever gone, and saw parts of the lunar surface that no human eyes had seen before.\n\nOn April 4, more than two-thirds of the way to the Moon, Commander Wiseman looked back through one of Orion's cabin windows and photographed home: a small, bright Earth floating in the dark. Artemis II is the dress rehearsal for the missions that will put astronauts back on the lunar surface."
+			},
+			"ruta_imagen": "res://assets/bitacora/artemis_2.jpg",
+			"desbloqueada": false
+		},
+		{
+			"id": "gemini_4",
+			"titulo": {
+				"es": "Gemini IV",
+				"en": "Gemini IV"
+			},
+			"subtitulo_o_fecha": {
+				"es": "Aprendiendo a caminar",
+				"en": "Learning to walk"
+			},
+			"texto": {
+				"es": "[i]Nota de bitácora: antes de que alguien pudiera caminar en la Luna, alguien tuvo que aprender a caminar en el espacio.[/i]\n\nLa Gemini IV despegó el 3 de junio de 1965 para una misión de cuatro días que marcó un récord estadounidense de tiempo en el espacio. Muy por encima de Hawái, [color=#8fd3ff]Ed White[/color] abrió la escotilla y salió flotando, amarrado a la cápsula por un [color=#f5c542]cordón umbilical[/color] de 7.6 metros forrado en dorado, mientras [color=#8fd3ff]Jim McDivitt[/color] le tomaba fotos desde adentro. Fue la [color=#f5c542]primera caminata espacial estadounidense[/color]. White se movía con una pistolita de oxígeno y pasó unos 20 minutos flotando sobre la Tierra. [i]«Te ves hermoso, Ed»[/i], le dijo McDivitt por radio. [i]«Me siento como un millón de dólares»[/i], respondió White, y cuando le ordenaron volver a entrar lo llamó [i]«el momento más triste de mi vida».[/i]\n\nLa tripulación también practicó navegar guiándose por las estrellas con un [color=#f5c542]sextante[/color], completó 62 órbitas y amerizó en el Atlántico, donde los recogió el USS Wasp. Cada caminata lunar del programa Apolo se construyó sobre lo que ellos aprendieron.",
+				"en": "[i]Logbook note: before anyone could walk on the Moon, someone had to learn to walk in space.[/i]\n\nGemini IV lifted off on June 3, 1965, for a four-day mission that set a new American record for time in space. High above Hawaii, [color=#8fd3ff]Ed White[/color] opened the hatch and floated outside, tied to the capsule by a 25-foot, gold-wrapped [color=#f5c542]umbilical cord[/color], while [color=#8fd3ff]Jim McDivitt[/color] took photos from inside. It was the [color=#f5c542]first American spacewalk[/color]. White steered himself with a handheld oxygen [i]“zip gun”[/i] and spent about 20 minutes drifting over the Earth. [i]“You look beautiful, Ed,”[/i] McDivitt radioed. [i]“I feel like a million dollars,”[/i] White replied, and when he was ordered back inside he called it [i]“the saddest moment of my life.”[/i]\n\nThe crew also practiced navigating by the stars with a [color=#f5c542]sextant[/color], completed 62 orbits and splashed down in the Atlantic, where the USS Wasp picked them up. Every Apollo moonwalk built on what they learned."
+			},
+			"ruta_imagen": "res://assets/bitacora/gemini_4.jpg",
+			"desbloqueada": false
+		},
+		{
+			"id": "earth_atmosphere",
+			"titulo": {
+				"es": "La atmósfera terrestre",
+				"en": "Earth's Atmosphere"
+			},
+			"subtitulo_o_fecha": {
+				"es": "Un pastel de capas hecho de aire",
+				"en": "A layer cake made of air"
+			},
+			"texto": {
+				"es": "[i]Nota de bitácora: acabas de atravesar las cinco capas. Esto es por lo que volaste.[/i]\n\nLa atmósfera envuelve el planeta como un pastel de capas gigante e invisible. Nos da aire para respirar, frena los [color=#f5c542]rayos ultravioleta[/color] dañinos y mantiene temperaturas en las que se puede vivir. Sin ella iríamos como la Luna, de -133 °C a 121 °C. Los aviones, globos, meteoros y satélites que esquivaste al subir pertenecen cada uno a una de sus capas.\n\nPrimero viene la [color=#8fd3ff]troposfera[/color], donde ocurre todo nuestro clima. Luego la [color=#8fd3ff]estratosfera[/color], donde vuelan los aviones de pasajeros y vive la [color=#f5c542]capa de ozono[/color] que nos protege. En la helada [color=#8fd3ff]mesosfera[/color] se queman casi todos los meteoros. La [color=#8fd3ff]termosfera[/color] puede pasar de los 2,000 °C; ahí orbita la Estación Espacial Internacional y ahí brillan las [color=#f5c542]auroras[/color]. Al final está la [color=#8fd3ff]exosfera[/color], donde el aire se va adelgazando hasta que sus últimas moléculas se escapan al espacio.",
+				"en": "[i]Logbook note: you just punched through all five layers. Here's what you flew through.[/i]\n\nEarth's atmosphere wraps the planet like a giant, invisible layer cake. It gives us air to breathe, blocks harmful [color=#f5c542]UV rays[/color] and keeps temperatures livable. Without it we would swing like the Moon, from -208 °F to 250 °F. The planes, balloons, meteors and satellites you dodged on the way up each belong to one of its layers.\n\nFirst comes the [color=#8fd3ff]troposphere[/color], where all our weather happens. Next is the [color=#8fd3ff]stratosphere[/color], home of airliners and the protective [color=#f5c542]ozone layer[/color]. The freezing [color=#8fd3ff]mesosphere[/color] is where most meteors burn up. The [color=#8fd3ff]thermosphere[/color] can heat past 2,000 °C; the International Space Station orbits there, and the [color=#f5c542]auroras[/color] glow inside it. Last is the [color=#8fd3ff]exosphere[/color], where the air thins out until its final molecules drift away into space."
+			},
+			"ruta_imagen": "res://assets/bitacora/earth_atmosphere.jpg",
+			"desbloqueada": false
+		},
+		{
+			"id": "solar_flares",
+			"titulo": {
+				"es": "Llamaradas solares",
+				"en": "Solar Flares"
+			},
+			"subtitulo_o_fecha": {
+				"es": "Clase X",
+				"en": "X-Class"
+			},
+			"texto": {
+				"es": "[i]Nota de bitácora: la tormenta que metió a tu tripulación en el refugio empezó aquí.[/i]\n\nMás o menos cada 11 años el Sol llega a su [color=#f5c542]máximo solar[/color]. Los campos magnéticos enredados de su superficie se rompen y se vuelven a unir, soltando explosiones enormes llamadas [color=#f5c542]llamaradas solares[/color], muchas veces junto con nubes gigantes de partículas cargadas conocidas como [color=#f5c542]eyecciones de masa coronal[/color] (CME). Las llamaradas se clasifican como A, B, C, M y X, y cada letra tiene 10 veces más energía que la anterior. Las más grandes, las de [color=#8fd3ff]clase X[/color], son las explosiones más potentes del sistema solar: liberan tanta energía como mil millones de bombas de hidrógeno.\n\nEn 2003 hubo una tan fuerte que saturó los sensores de la NASA; después los científicos calcularon que fue una [color=#8fd3ff]X28[/color]. En 2006, varias llamaradas clase X alteraron las señales de GPS en todo el mundo. Cuando una tormenta apunta a la Tierra, su radiación puede poner en peligro a los astronautas, los satélites y las redes eléctricas, así que la NASA y la NOAA vigilan el Sol de día y de noche para avisar a las tripulaciones a tiempo.",
+				"en": "[i]Logbook note: the storm that sent your crew into the shelter started here.[/i]\n\nAbout every 11 years the Sun reaches [color=#f5c542]solar maximum[/color]. Tangled magnetic fields on its surface snap and reconnect, unleashing huge explosions called [color=#f5c542]solar flares[/color], often together with giant clouds of charged particles known as [color=#f5c542]coronal mass ejections[/color] (CMEs). Flares are ranked A, B, C, M and X, and each letter packs 10 times more energy than the one before. The biggest, [color=#8fd3ff]X-class[/color] flares, are the largest explosions in the solar system, releasing as much energy as a billion hydrogen bombs.\n\nIn 2003 a flare was so strong that it overloaded NASA's sensors; scientists later estimated it at [color=#8fd3ff]X28[/color]. In 2006, X-class flares disrupted GPS signals around the globe. When a storm points at Earth, its radiation can threaten astronauts, satellites and power grids, so NASA and NOAA watch the Sun day and night to warn crews in time to take cover."
+			},
+			"ruta_imagen": "res://assets/bitacora/solar_flares_sheet.jpg",
+			"animacion": {
+				"columnas": 11,
+				"filas": 8,
+				"frames": 88,
+				"fps": 12.5
+			},
+			"desbloqueada": false
+		},
+		{
+			"id": "lunar_craters",
+			"titulo": {
+				"es": "Cráteres lunares",
+				"en": "Lunar Craters"
+			},
+			"subtitulo_o_fecha": {
+				"es": "Las huellas de la historia",
+				"en": "Fingerprints of history"
+			},
+			"texto": {
+				"es": "[i]Nota de bitácora: la Luna, por fin de cerca. Su superficie se acuerda de todo.[/i]\n\nLa Luna es una [color=#f5c542]cápsula del tiempo[/color] cósmica. En la Tierra, el viento, el agua y el movimiento de las placas tectónicas borran las cicatrices viejas, pero la Luna conserva las marcas de los choques violentos que dieron forma al sistema solar. Cuando un asteroide o un cometa se estrella contra ella, el impacto lanza roca destrozada que se llama [color=#f5c542]eyecta[/color]. Los golpes chicos dejan [color=#8fd3ff]cráteres simples[/color] con forma de tazón; los más grandes forman [color=#8fd3ff]cráteres complejos[/color] con picos centrales y paredes en escalones; y los mayores excavan [color=#8fd3ff]cuencas de impacto[/color] de más de 300 km de ancho.\n\nHace miles de millones de años, el magma subió por las grietas debajo de esas cuencas gigantes y se enfrió formando llanuras oscuras y lisas de basalto llamadas [color=#f5c542]mares[/color] (en latín, [i]maria[/i]). Son las manchas oscuras que dibujan la «cara» que vemos en el cielo de noche.",
+				"en": "[i]Logbook note: the Moon, up close at last. Its surface remembers everything.[/i]\n\nThe Moon is a cosmic [color=#f5c542]time capsule[/color]. On Earth, wind, water and moving tectonic plates erase old scars, but the Moon keeps the marks of the violent collisions that shaped the solar system. When an asteroid or comet slams into it, the impact blasts out shattered rock called [color=#f5c542]ejecta[/color]. Small hits leave bowl-shaped [color=#8fd3ff]simple craters[/color]; bigger ones form [color=#8fd3ff]complex craters[/color] with central peaks and terraced walls; the largest carve [color=#8fd3ff]impact basins[/color] more than 186 miles wide.\n\nBillions of years ago, magma rose through cracks beneath those giant basins and cooled into dark, smooth plains of basalt called [color=#f5c542]maria[/color], Latin for “seas.” They are the dark patches that form the familiar “face” we see in the night sky."
+			},
+			"ruta_imagen": "res://assets/bitacora/lunar_craters.jpg",
+			"desbloqueada": false
+		}
+	]
+}

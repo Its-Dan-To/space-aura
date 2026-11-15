@@ -1,0 +1,38 @@
+VIAJE DE 3 DÍAS EN PRIMERA PERSONA
+==================================
+
+Flujo: ... Ascenso -> Órbita terrestre + escape -> VIAJE (cabina) -> llegada a la Luna
+
+Copia (REEMPLAZA; en scripts: Ctrl+A, Supr, pegar):
+  scenes/viaje.tscn                 -> res://scenes/                (nuevo)
+  scripts/viaje.gd                  -> res://scripts/               (nuevo)
+  scripts/minijuegos/*.gd           -> res://scripts/minijuegos/    (carpeta nueva)
+  scripts/orbita.gd                 -> res://scripts/
+  scripts/mision.gd                 -> res://scripts/
+  assets/viaje/*.jpg                -> res://assets/viaje/          (carpeta nueva)
+
+LAS 5 FALLAS (un archivo cada una en scripts/minijuegos/):
+  valvulas.gd     O2: 1-2-3 elige válvula, A/D o arrastrar el volante para girar
+  asteroides.gd   radar: flechas/WASD o la cruceta; cada movimiento gasta FUEL
+  tormenta.gd     clic en la palanca (o E), luego mantener DEPLOY (o ESPACIO)
+  computadora.gd  alarma 1202: clic en procesos ámbar (o teclas 1-8)
+  antena.gd       W/S frecuencia, A/D ángulo (o arrastrar las perillas)
+  base.gd         cosas comunes de todos los minijuegos
+
+QUÉ FALLAS LE TOCAN A CADA NAVE (en viaje.gd, FALLAS):
+  GEMINI IV : válvulas x3 (rápidas), asteroides (con 0.2 s de retraso), tormenta, antena
+  APOLLO 11 : antena, válvulas, asteroides, tormenta, alarma 1202
+  ARTEMIS II: antena, asteroides (radar ve 2 casillas antes), 1202 con nombres revueltos,
+			  tormenta y, a veces (40%), las 3 válvulas fallan juntas
+
+LO QUE HACEN LAS MEJORAS DEL TALLER EN EL VIAJE:
+  PROPULSIÓN     -> más combustible inicial (para esquivar asteroides)
+  ENERGÍA        -> el oxígeno se pierde más lento
+  CAP. DE MASA   -> 70 o más: casco reforzado (menos daño y el escudo cierra en 1.5 s)
+  CIENCIA        -> más datos por segundo de viaje
+  COMUNICACIONES -> la antena es más fácil de alinear
+
+Si se acaba el OXÍGENO o el CASCO: misión fallida (reintentar viaje / taller / menú).
+Cada falla resuelta da 300 puntos extra al puntaje final.
+
+mapa_de_paneles.png muestra dónde se dibuja cada cosa sobre la cabina.

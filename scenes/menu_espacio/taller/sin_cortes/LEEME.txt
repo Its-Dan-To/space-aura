@@ -1,0 +1,19 @@
+SIN PANTALLAS NEGRAS: ASCENSO -> ÓRBITA -> LUNA
+===============================================
+
+Copia (REEMPLAZA; en scripts: Ctrl+A, Supr, pegar):
+  scripts/orbita.gd              -> res://scripts/
+  scripts/ascenso.gd             -> res://scripts/
+  scripts/mision.gd              -> res://scripts/
+  scenes/orbita.tscn             -> res://scenes/   (por si no la tienes)
+  assets/naves/modulo_lunar.png  -> res://assets/naves/
+
+Ya NO se usan luna.tscn ni luna.gd (del paquete anterior): puedes borrarlos.
+
+Qué cambió:
+  - Al llegar a la exosfera, la imagen del ascenso se desvanece directo sobre la
+    órbita (sin pantalla negra).
+  - La órbita, el escape, el acercamiento a la Luna y la llegada son UNA sola
+    escena continua: la Tierra se hace chiquita y la Luna crece, sin cortes.
+  - Se quitó lo de "3 días". En orbita.gd, la función _iniciar_acercamiento()
+    tiene un comentario "AQUÍ IRÁ DESPUÉS LA PARTE DEL VIAJE DE 3 DÍAS".

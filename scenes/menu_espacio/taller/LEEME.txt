@@ -1,0 +1,27 @@
+TALLER DE MEJORAS
+=================
+
+Flujo: Menú -> Intro -> Selección de nave -> TALLER -> Lanzamiento/Ascenso
+
+Copia (REEMPLAZA los que ya existan):
+  scenes/taller.tscn            -> res://scenes/
+  scripts/taller.gd             -> res://scripts/   (nuevo)
+  scripts/mision.gd             -> res://scripts/
+  scripts/seleccion_nave.gd     -> res://scripts/
+  scripts/ascenso.gd            -> res://scripts/
+  assets/hangar/*.png           -> res://assets/hangar/   (carpeta nueva)
+Luego: Proyecto > Recargar proyecto actual.
+Recuerda: al pegar un script, primero Ctrl+A y Supr.
+
+Precios (en mision.gd, MEJORAS):  MÍNIMA +15 $5M | MEDIA +40 $12M | MÁXIMA +65 $20M
+Se puede mejorar el mismo stat varias veces; ningún stat pasa de 100.
+
+Qué hace cada stat en el ascenso:
+  PROPULSIÓN      sube más rápido
+  ENERGÍA         escudo protector: 1 golpe absorbido por cada 40 puntos
+  CAP. DE MASA    más resistencia (corazones) pero menos maniobra
+  CIENCIA         datos científicos (puntos) por cada capa
+  COMUNICACIONES  más tiempo de aviso de rayos; con 50+ avisa de aviones/satélites
+
+Puntaje final = datos científicos + 400 por corazón restante + 1 punto por cada
+$50,000 sin gastar (estos dos últimos solo si completas la misión).

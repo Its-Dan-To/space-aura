@@ -1,0 +1,23 @@
+ÓRBITA Y ESCAPE
+===============
+
+Flujo: ... Taller -> Lanzamiento/Ascenso -> (al ganar, solo) ÓRBITA -> puntaje final
+
+Copia (REEMPLAZA los que ya existan; en scripts: Ctrl+A, Supr, pegar):
+  scenes/orbita.tscn     -> res://scenes/      (nuevo)
+  scripts/orbita.gd      -> res://scripts/     (nuevo)
+  scripts/ascenso.gd     -> res://scripts/
+  scripts/mision.gd      -> res://scripts/
+Usa las imágenes que ya tienes en res://assets/espacio/ (Tierra y Luna del paquete
+Cozy Space) y las cápsulas de res://assets/naves/.
+
+Qué pasa:
+  1. Al llegar a la exosfera, el juego pasa solo a la órbita.
+  2. La cápsula da vueltas a la Tierra (pasa por detrás y por delante) mientras
+     Albertsahur explica la órbita de estacionamiento.
+  3. Cuando termina de explicar, en el siguiente paso por la derecha se encienden
+     los motores: la órbita se abre en espiral y la nave sale disparada.
+  4. "¡Rumbo al espacio profundo!" y aparece el puntaje del ascenso.
+
+Clic o Espacio: adelanta el texto de Albertsahur.
+En orbita.gd puedes cambiar SEGUNDOS_POR_VUELTA, NEBULOSA y los textos.

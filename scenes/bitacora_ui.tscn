@@ -1,0 +1,183 @@
+[gd_scene format=3 uid="uid://b2msc6yiyi1hw"]
+
+[ext_resource type="Script" uid="uid://cldouf6l8x717" path="res://scripts/bitacora_ui.gd" id="1_bitacora_ui"]
+
+[node name="BitacoraUI" type="CanvasLayer" unique_id=1684976501]
+process_mode = 3
+layer = 110
+script = ExtResource("1_bitacora_ui")
+
+[node name="BotonDiario" type="Button" parent="." unique_id=140213346]
+unique_name_in_owner = true
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -156.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = 60.0
+grow_horizontal = 0
+focus_mode = 0
+theme_override_font_sizes/font_size = 18
+text = "Diario"
+
+[node name="Ventana" type="Control" parent="." unique_id=283084464]
+unique_name_in_owner = true
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fondo" type="ColorRect" parent="Ventana" unique_id=110273261]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.65)
+
+[node name="Centro" type="CenterContainer" parent="Ventana" unique_id=1848627180]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="Ventana/Centro" unique_id=42956221]
+custom_minimum_size = Vector2(1120, 620)
+layout_mode = 2
+
+[node name="Margen" type="MarginContainer" parent="Ventana/Centro/Panel" unique_id=1185034334]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="Ventana/Centro/Panel/Margen" unique_id=1734037094]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Cabecera" type="HBoxContainer" parent="Ventana/Centro/Panel/Margen/VBox" unique_id=91676474]
+layout_mode = 2
+
+[node name="TituloDiario" type="Label" parent="Ventana/Centro/Panel/Margen/VBox/Cabecera" unique_id=79772665]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 22
+text = "Bitácora Espacial"
+
+[node name="BotonCerrar" type="Button" parent="Ventana/Centro/Panel/Margen/VBox/Cabecera" unique_id=1058162803]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(38, 38)
+layout_mode = 2
+tooltip_text = "Cerrar (Esc)"
+theme_override_font_sizes/font_size = 18
+text = "X"
+
+[node name="HSeparator" type="HSeparator" parent="Ventana/Centro/Panel/Margen/VBox" unique_id=1351154763]
+layout_mode = 2
+
+[node name="Cuerpo" type="HBoxContainer" parent="Ventana/Centro/Panel/Margen/VBox" unique_id=1480036540]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 14
+
+[node name="ScrollLista" type="ScrollContainer" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo" unique_id=2139843969]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(210, 0)
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="ListaEntradas" type="VBoxContainer" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo/ScrollLista" unique_id=404082078]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="VSeparator" type="VSeparator" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo" unique_id=394519088]
+layout_mode = 2
+
+[node name="Lectura" type="HBoxContainer" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo" unique_id=1461408006]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 18
+
+[node name="Ficha" type="VBoxContainer" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo/Lectura" unique_id=1938599084]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Imagen" type="TextureRect" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo/Lectura/Ficha" unique_id=2031129050]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 260)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TituloEntrada" type="Label" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo/Lectura/Ficha" unique_id=1934515376]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.77, 0.26, 1)
+theme_override_font_sizes/font_size = 24
+text = "Título"
+autowrap_mode = 3
+
+[node name="Subtitulo" type="RichTextLabel" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo/Lectura/Ficha" unique_id=121822538]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/default_color = Color(0.56, 0.83, 1, 1)
+theme_override_font_sizes/normal_font_size = 17
+theme_override_font_sizes/italics_font_size = 17
+bbcode_enabled = true
+text = "[i]Subtítulo[/i]"
+fit_content = true
+scroll_active = false
+
+[node name="Espacio" type="Control" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo/Lectura/Ficha" unique_id=1915218296]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Navegacion" type="HBoxContainer" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo/Lectura/Ficha" unique_id=755069825]
+layout_mode = 2
+
+[node name="BotonAnterior" type="Button" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo/Lectura/Ficha/Navegacion" unique_id=1185610178]
+unique_name_in_owner = true
+layout_mode = 2
+text = "< Anterior"
+
+[node name="Espaciador1" type="Control" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo/Lectura/Ficha/Navegacion" unique_id=1693893185]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Contador" type="Label" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo/Lectura/Ficha/Navegacion" unique_id=182556672]
+unique_name_in_owner = true
+layout_mode = 2
+text = "1 / 1"
+
+[node name="Espaciador2" type="Control" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo/Lectura/Ficha/Navegacion" unique_id=257327571]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BotonSiguiente" type="Button" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo/Lectura/Ficha/Navegacion" unique_id=1044089447]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Siguiente >"
+
+[node name="Texto" type="RichTextLabel" parent="Ventana/Centro/Panel/Margen/VBox/Cuerpo/Lectura" unique_id=64840176]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/line_separation = 3
+theme_override_font_sizes/normal_font_size = 16
+theme_override_font_sizes/bold_font_size = 16
+theme_override_font_sizes/italics_font_size = 16
+bbcode_enabled = true
+text = "Texto de la entrada"

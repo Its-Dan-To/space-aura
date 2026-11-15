@@ -1,0 +1,25 @@
+PANTALLAS NUEVAS: INTRO + SELECCIÓN DE NAVE
+===========================================
+
+1. Cierra Godot (o al menos no tengas abiertas estas escenas).
+2. Copia las carpetas "scenes", "scripts" y "assets" de este zip ENCIMA de las
+   de tu proyecto (donde está project.godot). Solo se AGREGAN archivos nuevos,
+   no se reemplaza nada de lo que ya tenían.
+3. Abre Godot. En scripts/menu_principal.gd cambia la línea 7 por:
+       const ESCENA_JUEGO := "res://scenes/intro.tscn"
+4. Corre el menú y dale a "Jugar".
+
+Archivos nuevos:
+  scenes/intro.tscn             pantalla negra con texto
+  scenes/seleccion_nave.tscn    elegir nave + tutorial de Albertsahur
+  scripts/intro.gd              aquí se cambian los textos de la intro (LINEAS)
+  scripts/seleccion_nave.gd     aquí se cambia el tutorial (TUTORIAL)
+  scripts/mision.gd             datos de las naves (stats, costos, textos)
+  assets/naves/                 cohetes y cápsulas
+  assets/personajes/            Albertsahur (normal, hablando, parpadeando)
+  assets/ui/                    iconos de las stats
+
+Controles en la selección de nave:
+  < >  o flechas del teclado   cambiar de nave
+  clic en el diálogo / Espacio / Enter   avanzar el texto
+  ESC en la intro              saltar la intro

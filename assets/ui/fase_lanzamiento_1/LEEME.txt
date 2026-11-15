@@ -1,0 +1,30 @@
+LANZAMIENTO + ASCENSO CON OBSTÁCULOS
+====================================
+
+Copia cada archivo a su carpeta (REEMPLAZA los que ya tengas con el mismo nombre):
+  scenes/ascenso.tscn             -> res://scenes/
+  scripts/ascenso.gd              -> res://scripts/
+  scripts/mision.gd               -> res://scripts/
+  scripts/seleccion_nave.gd       -> res://scripts/
+  assets/atmosfera/atmosfera.png  -> res://assets/atmosfera/
+  assets/obstaculos/*.png         -> res://assets/obstaculos/   (carpeta nueva)
+
+Después: Proyecto > Recargar proyecto actual.
+
+Cómo se juega:
+  - Albertsahur da instrucciones y empieza la cuenta 3, 2, 1... ¡DESPEGUE!
+  - La nave sube sola. IZQUIERDA / DERECHA para esquivar.
+  - Troposfera: aviones y rayos (el rayo parpadea en rojo antes de caer).
+  - Estratosfera: globos meteorológicos.
+  - Mesosfera: meteoritos.
+  - Termosfera: satélites + escudos (recogerlos repara 1 punto).
+  - Exosfera: satélites. Al llegar arriba, ¡misión cumplida!
+
+Stats por nave (salen de sus stats en mision.gd):
+  Resistencia = 2 + Cap. de masa / 25     (Gemini 3, Artemis 5, Apollo 6)
+  Maniobra    = 420 - Cap. de masa x 2.4  (Gemini ágil, Artemis media, Apollo lenta)
+  Duración    = 75 - Propulsión x 0.25 s  (Apollo y Artemis suben más rápido)
+
+Para ajustar: en ascenso.gd, DIFICULTAD (más obstáculos) y la lista CAPAS
+(qué obstáculos salen y cada cuántos segundos). Los textos de Albertsahur
+están en DIALOGOS.
